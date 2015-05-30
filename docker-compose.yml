@@ -1,0 +1,13 @@
+migrator:
+  image: ubergesundheit/postgres-migrator
+  external_links:
+    - your_postgres_container
+  environment:
+    - SLEEP=0
+    - DB_NAME=postgres
+    - DB_HOST=your_postgres_container
+    - DB_PASSWORD=db-pw-123-yeah
+    - DB_USER=postgres
+  volumes:
+    - ./migrations:/migrations
+
