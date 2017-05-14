@@ -1,5 +1,5 @@
 migrator:
-  image: ubergesundheit/postgres-migrator
+  image: ubergesundheit/docker-postgres-migrator
   external_links:
     - your_postgres_container
   environment:
